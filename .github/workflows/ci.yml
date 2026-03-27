@@ -23,6 +23,9 @@ jobs:
       - name: install dependencies
         run: npm run install:all
 
+      - name: audit
+        run: npm audit
+
       - name: lint backend
         run: npm run lint:backend
 
