@@ -1,0 +1,23 @@
+{
+  "name": "task-management-devops",
+  "version": "1.0.0",
+  "description": "Full-stack Task Management System for DevOps course",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev:backend": "npm run dev --workspace backend",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "build:backend": "npm run build  --workspace backend",
+    "build:frontend": "npm run build --workspace frontend",
+    "test:backend": "npm test --workspace backend",
+    "test:frontend": "npm test --workspace frontend",
+    "lint:backend": "npm run lint  --workspace backend",
+    "lint:frontend": "npm run lint --workspace frontend"
+  },
+  "author": "",
+  "license": "MIT"
+}
